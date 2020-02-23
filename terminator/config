@@ -1,0 +1,30 @@
+[global_config]
+  borderless = True
+  title_inactive_bg_color = "#5c3566"
+  title_inactive_fg_color = "#888a85"
+  title_receive_bg_color = "#ad7fa8"
+  title_receive_fg_color = "#fce94f"
+  title_transmit_bg_color = "#ad7fa8"
+  title_transmit_fg_color = "#edd400"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#555753"
+    background_darkness = 0.29
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Fira Code 11
+    foreground_color = "#fdff7e"
+    palette = "#282828:#f57900:#8ae234:#d79921:#729fcf:#b16286:#689d6a:#a89984:#928374:#ce5c00:#4e9a06:#fabd2f:#3465a4:#d3869b:#8ec07c:#ebdbb2"
+    scrollback_lines = 2500
+    scrollbar_position = hidden
+    use_system_font = False
