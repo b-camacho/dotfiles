@@ -1,7 +1,4 @@
 #!/bin/sh
+export MONITOR=$(polybar -m|tail -1|sed -e 's/:.*$//g')
+polybar bottom &
 
-for display in `xrandr --query | grep " connected 1" | awk 'BEGIN { FS=" " } ; {print $1}'`
-do
-	`MONITOR=$display polybar bottom` &
-	`MONITOR=$display polybar top` &
-done

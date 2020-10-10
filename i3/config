@@ -41,23 +41,11 @@ bindsym $mod+Shift+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id rofi -show run
 #bindsym $mod+Shift+d exec --no-startup-id rofi -show window
 
-# change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -66,10 +54,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+Shift+h split h
+bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+Shift+v split v
+bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -158,8 +146,8 @@ bindsym $mod+Shift+x "xrandr --auto"
 #        status_command i3status
 #}
 
-#Start both polybars for every monitor
-#exec --no-startup-id /home/nopony/.config/i3/polybars.sh 
+# Start both polybars for every monitor
+exec --no-startup-id /home/nopony/.config/i3/polybars.sh
 
 #exec --no-startup-id feh --randomize --bg-scale  ~/Desktop/bg/green/*
 #exec --no-startup-id nm-applet
@@ -168,8 +156,8 @@ bindsym $mod+Shift+x "xrandr --auto"
 #exec --no-startup-id compton 
 
 # i3-gaps config
-#for_window [class="^.*"] border pixel 0
-#gaps inner 0
+# for_window [class="^.*"] border pixel 0
+#gaps inner 5
 #gaps outer 0
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
