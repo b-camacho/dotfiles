@@ -20,7 +20,9 @@
   [[default]]
     background_color = "#323232"
     background_darkness = 0.29
+    cursor_blink = False
     cursor_color = "#aaaaaa"
+    cursor_shape = ibeam
     font = Fira Code 11
     foreground_color = "#fdff7e"
     palette = "#282828:#f57900:#8ae234:#d79921:#729fcf:#b16286:#689d6a:#a89984:#928374:#ce5c00:#4e9a06:#fabd2f:#3465a4:#d3869b:#8ec07c:#ebdbb2"

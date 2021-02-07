@@ -2,11 +2,16 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Declare the list of plugins.
+Plug 'xolox/vim-misc'
 Plug 'derekwyatt/vim-scala'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
+Plug 'xolox/vim-session'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
+
+" Disable save session prompt
+:let g:session_autosave = 'no'
 
 " Configuration for vim-scala
 au BufRead,BufNewFile *.sbt set filetype=scala
@@ -166,4 +171,5 @@ let g:edge_style = 'neon'
 let g:edge_disable_italic_comment = 1
 colorscheme edge " Rawr xd
 
-
+" Show lines for context
+set scrolloff=8
